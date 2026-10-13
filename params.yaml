@@ -1,0 +1,20 @@
+data:
+  raw_path: data/raw/winequality-red.csv
+  processed_dir: data/processed
+  label_threshold: 6
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+train:
+  models:
+    logistic_regression:
+      C: 1.0
+      max_iter: 1000
+    random_forest:
+      n_estimators: 200
+      max_depth: 10
+
+mlflow:
+  experiment_name: smart-lab-report
