@@ -1,0 +1,47 @@
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+      - src/prepare.py
+      - data/raw/winequality-red.csv
+    params:
+      - data.label_threshold
+    outs:
+      - data/processed/clean.csv
+
+  features:
+    cmd: python src/features.py
+    deps:
+      - src/features.py
+      - data/processed/clean.csv
+    params:
+      - split.test_size
+      - split.random_state
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+      - data/processed/scaler.joblib
+
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    params:
+      - train
+      - split.random_state
+    outs:
+      - models/best_model.joblib
+      - models/best_run.json
+
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - models/best_model.joblib
+      - data/processed/test.csv
+    metrics:
+      - metrics/metrics.json
+    plots:
+      - reports/figures/confusion_matrix.png

@@ -1,0 +1,49 @@
+data:
+  raw_path: data/raw/winequality-red.csv
+  processed_dir: data/processed
+  label_threshold: 6
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+train:
+  cv_folds: 5
+  runs:
+    - name: dummy-most-frequent
+      model_type: dummy
+      hyperparameters:
+        strategy: most_frequent
+    - name: logistic-regression-c-0.1
+      model_type: logistic_regression
+      hyperparameters:
+        C: 0.1
+        max_iter: 1000
+    - name: logistic-regression-c-1.0
+      model_type: logistic_regression
+      hyperparameters:
+        C: 1.0
+        max_iter: 1000
+    - name: logistic-regression-c-10.0
+      model_type: logistic_regression
+      hyperparameters:
+        C: 10.0
+        max_iter: 1000
+    - name: random-forest-100-depth-5
+      model_type: random_forest
+      hyperparameters:
+        n_estimators: 100
+        max_depth: 5
+    - name: random-forest-200-depth-10
+      model_type: random_forest
+      hyperparameters:
+        n_estimators: 200
+        max_depth: 10
+    - name: random-forest-300-unlimited-depth
+      model_type: random_forest
+      hyperparameters:
+        n_estimators: 300
+        max_depth: null
+
+mlflow:
+  experiment_name: smart-lab-report
