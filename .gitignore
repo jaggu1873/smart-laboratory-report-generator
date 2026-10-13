@@ -104,6 +104,5 @@ desktop.ini
 
 .venv/
 mlruns/
-models/
 __pycache__/
 .ipynb_checkpoints/

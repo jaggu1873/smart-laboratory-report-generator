@@ -1,0 +1,49 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+    - path: data/raw/winequality-red.csv
+      hash: md5
+      md5: 2daeecee174368f8a33b82c8cccae3a5
+      size: 84199
+    - path: src/prepare.py
+      hash: md5
+      md5: da920f310aec3a02be6c07dd86e2e530
+      size: 1530
+    params:
+      params.yaml:
+        data.label_threshold: 6
+    outs:
+    - path: data/processed/clean.csv
+      hash: md5
+      md5: f24176613fea79c7804b4c3856a55e8e
+      size: 79551
+  features:
+    cmd: python src/features.py
+    deps:
+    - path: data/processed/clean.csv
+      hash: md5
+      md5: f24176613fea79c7804b4c3856a55e8e
+      size: 79551
+    - path: src/features.py
+      hash: md5
+      md5: dad98dcc722ba4ed49dca5c1035ad3db
+      size: 1982
+    params:
+      params.yaml:
+        split.random_state: 42
+        split.test_size: 0.2
+    outs:
+    - path: data/processed/scaler.joblib
+      hash: md5
+      md5: 30212ebcf0880711042d97f908271a43
+      size: 1279
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 08d42e98af4713537e571a9c50d9898a
+      size: 60151
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 4ef8f3687807f77869cceec40b51ce5f
+      size: 239846

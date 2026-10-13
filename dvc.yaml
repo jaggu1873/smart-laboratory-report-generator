@@ -1,0 +1,23 @@
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+      - src/prepare.py
+      - data/raw/winequality-red.csv
+    params:
+      - data.label_threshold
+    outs:
+      - data/processed/clean.csv
+
+  features:
+    cmd: python src/features.py
+    deps:
+      - src/features.py
+      - data/processed/clean.csv
+    params:
+      - split.test_size
+      - split.random_state
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+      - data/processed/scaler.joblib
