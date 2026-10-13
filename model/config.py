@@ -58,6 +58,16 @@ class ModelConfig:
     max_tokens: int = field(default_factory=lambda: _env_int("LAB_MODEL_MAX_TOKENS", 1024))
     timeout_seconds: int = field(default_factory=lambda: _env_int("LAB_MODEL_TIMEOUT", 30))
     api_key_env: str = field(default_factory=lambda: _env_str("LAB_MODEL_API_KEY_ENV", "LAB_MODEL_API_KEY"))
+    sklearn_model_path: str = field(
+        default_factory=lambda: _env_str(
+            "LAB_SKLEARN_MODEL_PATH", "models/best_model.joblib"
+        )
+    )
+    sklearn_scaler_path: str = field(
+        default_factory=lambda: _env_str(
+            "LAB_SKLEARN_SCALER_PATH", "data/processed/scaler.joblib"
+        )
+    )
 
     def get_api_key(self) -> str | None:
         """Return the API key from the environment, or ``None`` if unset.
