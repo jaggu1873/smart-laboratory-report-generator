@@ -101,3 +101,9 @@ settings.local.json
 .DS_Store
 Thumbs.db
 desktop.ini
+
+.venv/
+mlruns/
+models/
+__pycache__/
+.ipynb_checkpoints/
