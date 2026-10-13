@@ -103,6 +103,7 @@ Thumbs.db
 desktop.ini
 
 .venv/
+mlflow.db
 mlruns/
 __pycache__/
 .ipynb_checkpoints/

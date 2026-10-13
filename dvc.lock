@@ -47,3 +47,91 @@ stages:
       hash: md5
       md5: 4ef8f3687807f77869cceec40b51ce5f
       size: 239846
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 08d42e98af4713537e571a9c50d9898a
+      size: 60151
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 4ef8f3687807f77869cceec40b51ce5f
+      size: 239846
+    - path: src/train.py
+      hash: md5
+      md5: 45706ae78f865f9eaf8837fd1beaf7ef
+      size: 7380
+    params:
+      params.yaml:
+        split.random_state: 42
+        train:
+          cv_folds: 5
+          runs:
+          - name: dummy-most-frequent
+            model_type: dummy
+            hyperparameters:
+              strategy: most_frequent
+          - name: logistic-regression-c-0.1
+            model_type: logistic_regression
+            hyperparameters:
+              C: 0.1
+              max_iter: 1000
+          - name: logistic-regression-c-1.0
+            model_type: logistic_regression
+            hyperparameters:
+              C: 1.0
+              max_iter: 1000
+          - name: logistic-regression-c-10.0
+            model_type: logistic_regression
+            hyperparameters:
+              C: 10.0
+              max_iter: 1000
+          - name: random-forest-100-depth-5
+            model_type: random_forest
+            hyperparameters:
+              n_estimators: 100
+              max_depth: 5
+          - name: random-forest-200-depth-10
+            model_type: random_forest
+            hyperparameters:
+              n_estimators: 200
+              max_depth: 10
+          - name: random-forest-300-unlimited-depth
+            model_type: random_forest
+            hyperparameters:
+              n_estimators: 300
+              max_depth:
+    outs:
+    - path: models/best_model.joblib
+      hash: md5
+      md5: 260c4f47aeaec3d50bbf59faa3459240
+      size: 4192073
+    - path: models/best_run.json
+      hash: md5
+      md5: 95c6ce345ef6af1dd524e494597069df
+      size: 398
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 08d42e98af4713537e571a9c50d9898a
+      size: 60151
+    - path: models/best_model.joblib
+      hash: md5
+      md5: 260c4f47aeaec3d50bbf59faa3459240
+      size: 4192073
+    - path: src/evaluate.py
+      hash: md5
+      md5: 8fba148d6757b652097a8faf729ead64
+      size: 2906
+    outs:
+    - path: metrics/metrics.json
+      hash: md5
+      md5: c698767cc66c156b6c1147146e2a3363
+      size: 169
+    - path: reports/figures/confusion_matrix.png
+      hash: md5
+      md5: 128c521b765f1c54d704f3afc32f7787
+      size: 25479

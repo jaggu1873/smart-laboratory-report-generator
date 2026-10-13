@@ -21,3 +21,27 @@ stages:
       - data/processed/train.csv
       - data/processed/test.csv
       - data/processed/scaler.joblib
+
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    params:
+      - train
+      - split.random_state
+    outs:
+      - models/best_model.joblib
+      - models/best_run.json
+
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - models/best_model.joblib
+      - data/processed/test.csv
+    metrics:
+      - metrics/metrics.json
+    plots:
+      - reports/figures/confusion_matrix.png
