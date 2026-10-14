@@ -2,13 +2,28 @@
 
 from __future__ import annotations
 
+import importlib.util
 import unittest
 
-import pandas as pd
+DATA_VALIDATION_DEPENDENCIES_AVAILABLE = all(
+    importlib.util.find_spec(module_name) is not None
+    for module_name in ("pandas", "yaml")
+)
 
-from src.prepare import EXPECTED_COLUMNS, validate_data
+if DATA_VALIDATION_DEPENDENCIES_AVAILABLE:
+    import pandas as pd
+
+    from src.prepare import EXPECTED_COLUMNS, validate_data
+else:
+    pd = None
+    EXPECTED_COLUMNS = ()
+    validate_data = None
 
 
+@unittest.skipUnless(
+    DATA_VALIDATION_DEPENDENCIES_AVAILABLE,
+    "pandas and PyYAML are required for raw-data validation tests",
+)
 class PrepareValidationTests(unittest.TestCase):
     def setUp(self) -> None:
         self.data = pd.DataFrame(
