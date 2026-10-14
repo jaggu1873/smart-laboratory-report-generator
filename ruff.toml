@@ -1,3 +1,7 @@
 [lint]
-# Keep lint focused on correctness instead of rewriting existing API conventions.
-select = ["E4", "E7", "E9", "F"]
+# Preserve public export ordering and Python 3.9-compatible annotation forms.
+ignore = ["RUF022", "UP037", "UP045"]
+
+[lint.per-file-ignores]
+# Keep the existing test file unchanged.
+"model/tests/test_sklearn_backend.py" = ["I001"]

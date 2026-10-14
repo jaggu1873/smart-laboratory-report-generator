@@ -12,10 +12,10 @@ from .generator import DEFAULT_SECTIONS, LabReportGenerator
 from .inference import MockModelBackend, ModelBackend, build_backend
 from .preprocessing import PreprocessingError, preprocess
 from .schemas import (
+    REQUIRED_SECTIONS,
     ExperimentInput,
     LabReport,
     Measurement,
-    REQUIRED_SECTIONS,
     ReportSection,
     ReportStatus,
     SectionName,
