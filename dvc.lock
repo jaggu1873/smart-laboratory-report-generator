@@ -9,8 +9,8 @@ stages:
       size: 84199
     - path: src/prepare.py
       hash: md5
-      md5: da920f310aec3a02be6c07dd86e2e530
-      size: 1530
+      md5: baf1cb2687bd912bae1eed22a4706e2c
+      size: 3819
     params:
       params.yaml:
         data.label_threshold: 6
@@ -124,9 +124,13 @@ stages:
       size: 4192073
     - path: src/evaluate.py
       hash: md5
-      md5: 8fba148d6757b652097a8faf729ead64
-      size: 2906
+      md5: f47156106b222707296cc886ec9e1412
+      size: 4474
     outs:
+    - path: metrics/feature_importance.csv
+      hash: md5
+      md5: 0cba4311f4d1b741ce51dd25475d1e7a
+      size: 389
     - path: metrics/metrics.json
       hash: md5
       md5: c698767cc66c156b6c1147146e2a3363
@@ -135,3 +139,7 @@ stages:
       hash: md5
       md5: 128c521b765f1c54d704f3afc32f7787
       size: 25479
+    - path: reports/figures/feature_importance.png
+      hash: md5
+      md5: aa9abf4e6131922769f01f2405a9ae35
+      size: 39826
