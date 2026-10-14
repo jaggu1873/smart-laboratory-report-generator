@@ -43,5 +43,8 @@ stages:
       - data/processed/test.csv
     metrics:
       - metrics/metrics.json
+    outs:
+      - metrics/feature_importance.csv
     plots:
       - reports/figures/confusion_matrix.png
+      - reports/figures/feature_importance.png

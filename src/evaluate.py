@@ -26,6 +26,8 @@ def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
     params = yaml.safe_load((project_root / "params.yaml").read_text(encoding="utf-8"))
     model = joblib.load(project_root / "models" / "best_model.joblib")
+    train_data = pd.read_csv(project_root / "data" / "processed" / "train.csv")
+    feature_names = train_data.drop(columns="good").columns
     test_data = pd.read_csv(project_root / "data" / "processed" / "test.csv")
     test_features = test_data.drop(columns="good")
     test_labels = test_data["good"].astype(int)
@@ -47,6 +49,8 @@ def main() -> None:
     figures_dir.mkdir(parents=True, exist_ok=True)
     metrics_path = metrics_dir / "metrics.json"
     confusion_path = figures_dir / "confusion_matrix.png"
+    feature_importance_path = metrics_dir / "feature_importance.csv"
+    feature_importance_figure_path = figures_dir / "feature_importance.png"
     metrics_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
 
     # Save a reproducible, labeled confusion matrix for the held-out test set.
@@ -63,6 +67,30 @@ def main() -> None:
     figure.savefig(confusion_path, dpi=150, bbox_inches="tight")
     plt.close(figure)
 
+    if hasattr(model, "feature_importances_"):
+        importances = model.feature_importances_
+        if len(importances) != len(feature_names):
+            raise ValueError(
+                "Model feature importance count does not match the training "
+                f"feature count ({len(importances)} != {len(feature_names)})"
+            )
+        feature_importance = pd.DataFrame(
+            {"feature": feature_names, "importance": importances}
+        ).sort_values("importance", ascending=True, kind="stable")
+        feature_importance.to_csv(feature_importance_path, index=False)
+
+        figure, axis = plt.subplots(figsize=(8, 6))
+        axis.barh(
+            feature_importance["feature"],
+            feature_importance["importance"],
+            color="steelblue",
+        )
+        axis.set_xlabel("Feature importance")
+        axis.set_title("Random Forest Feature Importance")
+        figure.tight_layout()
+        figure.savefig(feature_importance_figure_path, dpi=150, bbox_inches="tight")
+        plt.close(figure)
+
     mlflow.set_tracking_uri("sqlite:///mlflow.db")
     mlflow.set_experiment(params["mlflow"]["experiment_name"])
     with mlflow.start_run(run_name="final-evaluation"):
@@ -73,6 +101,9 @@ def main() -> None:
     print(json.dumps(metrics, indent=2))
     print(f"Saved metrics to {metrics_path}")
     print(f"Saved confusion matrix to {confusion_path}")
+    if hasattr(model, "feature_importances_"):
+        print(f"Saved feature importance data to {feature_importance_path}")
+        print(f"Saved feature importance plot to {feature_importance_figure_path}")
 
 
 if __name__ == "__main__":

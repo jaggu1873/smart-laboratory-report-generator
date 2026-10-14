@@ -19,9 +19,9 @@ import math
 from numbers import Real
 
 from .schemas import (
+    REQUIRED_SECTIONS,
     LabReport,
     Measurement,
-    REQUIRED_SECTIONS,
     ReportSection,
     SectionName,
     ValidationIssue,
