@@ -17,7 +17,27 @@ from __future__ import annotations
 #: a dimensionless / unit-less measurement (e.g. a plain count) and is
 #: intentionally allowed.
 CANONICAL_UNITS: frozenset[str] = frozenset(
-    {"g", "kg", "mg", "mL", "L", "C", "K", "s", "min", "h", "mol", "M", "%", ""}
+    {
+        "g",
+        "kg",
+        "mg",
+        "mL",
+        "L",
+        "C",
+        "K",
+        "s",
+        "min",
+        "h",
+        "mol",
+        "M",
+        "%",
+        "bar",
+        "W",
+        "kW",
+        "l/min",
+        "mm/s",
+        "",
+    }
 )
 
 #: Accepted aliases/synonyms mapping a lower-cased input to its canonical

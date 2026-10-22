@@ -44,6 +44,3 @@ train:
       hyperparameters:
         n_estimators: 300
         max_depth: null
-
-mlflow:
-  experiment_name: smart-lab-report

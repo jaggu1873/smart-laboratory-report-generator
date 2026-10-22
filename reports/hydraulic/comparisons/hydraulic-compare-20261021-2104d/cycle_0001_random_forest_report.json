@@ -1,0 +1,733 @@
+{
+  "measurements": [
+    {
+      "name": "PS1__mean",
+      "unit": "bar",
+      "value": 160.67349166666665
+    },
+    {
+      "name": "PS1__std",
+      "unit": "bar",
+      "value": 13.938146895896788
+    },
+    {
+      "name": "PS1__min",
+      "unit": "bar",
+      "value": 145.83
+    },
+    {
+      "name": "PS1__max",
+      "unit": "bar",
+      "value": 191.51
+    },
+    {
+      "name": "PS1__rms",
+      "unit": "bar",
+      "value": 161.27691360901596
+    },
+    {
+      "name": "PS1__p25",
+      "unit": "bar",
+      "value": 151.19
+    },
+    {
+      "name": "PS1__median",
+      "unit": "bar",
+      "value": 156.25
+    },
+    {
+      "name": "PS1__p75",
+      "unit": "bar",
+      "value": 166.31
+    },
+    {
+      "name": "PS2__mean",
+      "unit": "bar",
+      "value": 109.46691350000002
+    },
+    {
+      "name": "PS2__std",
+      "unit": "bar",
+      "value": 47.1105813396773
+    },
+    {
+      "name": "PS2__min",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS2__max",
+      "unit": "bar",
+      "value": 156.99
+    },
+    {
+      "name": "PS2__rms",
+      "unit": "bar",
+      "value": 119.17387308205953
+    },
+    {
+      "name": "PS2__p25",
+      "unit": "bar",
+      "value": 120.19
+    },
+    {
+      "name": "PS2__median",
+      "unit": "bar",
+      "value": 129.365
+    },
+    {
+      "name": "PS2__p75",
+      "unit": "bar",
+      "value": 130.54
+    },
+    {
+      "name": "PS3__mean",
+      "unit": "bar",
+      "value": 1.9914753333333333
+    },
+    {
+      "name": "PS3__std",
+      "unit": "bar",
+      "value": 0.9456260217751108
+    },
+    {
+      "name": "PS3__min",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS3__max",
+      "unit": "bar",
+      "value": 10.039
+    },
+    {
+      "name": "PS3__rms",
+      "unit": "bar",
+      "value": 2.204582177269274
+    },
+    {
+      "name": "PS3__p25",
+      "unit": "bar",
+      "value": 2.219
+    },
+    {
+      "name": "PS3__median",
+      "unit": "bar",
+      "value": 2.297
+    },
+    {
+      "name": "PS3__p75",
+      "unit": "bar",
+      "value": 2.359
+    },
+    {
+      "name": "PS4__mean",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__std",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__min",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__max",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__rms",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__p25",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__median",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS4__p75",
+      "unit": "bar",
+      "value": 0.0
+    },
+    {
+      "name": "PS5__mean",
+      "unit": "bar",
+      "value": 9.842169499999999
+    },
+    {
+      "name": "PS5__std",
+      "unit": "bar",
+      "value": 0.08814660762852232
+    },
+    {
+      "name": "PS5__min",
+      "unit": "bar",
+      "value": 9.681
+    },
+    {
+      "name": "PS5__max",
+      "unit": "bar",
+      "value": 10.016
+    },
+    {
+      "name": "PS5__rms",
+      "unit": "bar",
+      "value": 9.842564213210228
+    },
+    {
+      "name": "PS5__p25",
+      "unit": "bar",
+      "value": 9.762
+    },
+    {
+      "name": "PS5__median",
+      "unit": "bar",
+      "value": 9.844
+    },
+    {
+      "name": "PS5__p75",
+      "unit": "bar",
+      "value": 9.922
+    },
+    {
+      "name": "PS6__mean",
+      "unit": "bar",
+      "value": 9.7280975
+    },
+    {
+      "name": "PS6__std",
+      "unit": "bar",
+      "value": 0.08535905728402034
+    },
+    {
+      "name": "PS6__min",
+      "unit": "bar",
+      "value": 9.568
+    },
+    {
+      "name": "PS6__max",
+      "unit": "bar",
+      "value": 9.887
+    },
+    {
+      "name": "PS6__rms",
+      "unit": "bar",
+      "value": 9.728471983727284
+    },
+    {
+      "name": "PS6__p25",
+      "unit": "bar",
+      "value": 9.65
+    },
+    {
+      "name": "PS6__median",
+      "unit": "bar",
+      "value": 9.733
+    },
+    {
+      "name": "PS6__p75",
+      "unit": "bar",
+      "value": 9.806
+    },
+    {
+      "name": "EPS1__mean",
+      "unit": "W",
+      "value": 2538.929166666667
+    },
+    {
+      "name": "EPS1__std",
+      "unit": "W",
+      "value": 185.60065234073278
+    },
+    {
+      "name": "EPS1__min",
+      "unit": "W",
+      "value": 2339.8
+    },
+    {
+      "name": "EPS1__max",
+      "unit": "W",
+      "value": 2951.6
+    },
+    {
+      "name": "EPS1__rms",
+      "unit": "W",
+      "value": 2545.7040117617757
+    },
+    {
+      "name": "EPS1__p25",
+      "unit": "W",
+      "value": 2409.8
+    },
+    {
+      "name": "EPS1__median",
+      "unit": "W",
+      "value": 2479.8
+    },
+    {
+      "name": "EPS1__p75",
+      "unit": "W",
+      "value": 2618.8
+    },
+    {
+      "name": "FS1__mean",
+      "unit": "l/min",
+      "value": 6.709815
+    },
+    {
+      "name": "FS1__std",
+      "unit": "l/min",
+      "value": 3.012913997131072
+    },
+    {
+      "name": "FS1__min",
+      "unit": "l/min",
+      "value": 0.0
+    },
+    {
+      "name": "FS1__max",
+      "unit": "l/min",
+      "value": 18.71
+    },
+    {
+      "name": "FS1__rms",
+      "unit": "l/min",
+      "value": 7.355220464971348
+    },
+    {
+      "name": "FS1__p25",
+      "unit": "l/min",
+      "value": 7.68775
+    },
+    {
+      "name": "FS1__median",
+      "unit": "l/min",
+      "value": 7.836
+    },
+    {
+      "name": "FS1__p75",
+      "unit": "l/min",
+      "value": 7.934
+    },
+    {
+      "name": "FS2__mean",
+      "unit": "l/min",
+      "value": 10.304591666666665
+    },
+    {
+      "name": "FS2__std",
+      "unit": "l/min",
+      "value": 0.09169501039072712
+    },
+    {
+      "name": "FS2__min",
+      "unit": "l/min",
+      "value": 10.148
+    },
+    {
+      "name": "FS2__max",
+      "unit": "l/min",
+      "value": 10.446
+    },
+    {
+      "name": "FS2__rms",
+      "unit": "l/min",
+      "value": 10.304999630842627
+    },
+    {
+      "name": "FS2__p25",
+      "unit": "l/min",
+      "value": 10.2105
+    },
+    {
+      "name": "FS2__median",
+      "unit": "l/min",
+      "value": 10.327
+    },
+    {
+      "name": "FS2__p75",
+      "unit": "l/min",
+      "value": 10.389
+    },
+    {
+      "name": "TS1__mean",
+      "unit": "C",
+      "value": 35.62198333333333
+    },
+    {
+      "name": "TS1__std",
+      "unit": "C",
+      "value": 0.30565048076011453
+    },
+    {
+      "name": "TS1__min",
+      "unit": "C",
+      "value": 35.156
+    },
+    {
+      "name": "TS1__max",
+      "unit": "C",
+      "value": 36.152
+    },
+    {
+      "name": "TS1__rms",
+      "unit": "C",
+      "value": 35.62329460923943
+    },
+    {
+      "name": "TS1__p25",
+      "unit": "C",
+      "value": 35.401
+    },
+    {
+      "name": "TS1__median",
+      "unit": "C",
+      "value": 35.572
+    },
+    {
+      "name": "TS1__p75",
+      "unit": "C",
+      "value": 35.899750000000004
+    },
+    {
+      "name": "TS2__mean",
+      "unit": "C",
+      "value": 40.97876666666666
+    },
+    {
+      "name": "TS2__std",
+      "unit": "C",
+      "value": 0.15301049709814793
+    },
+    {
+      "name": "TS2__min",
+      "unit": "C",
+      "value": 40.773
+    },
+    {
+      "name": "TS2__max",
+      "unit": "C",
+      "value": 41.25
+    },
+    {
+      "name": "TS2__rms",
+      "unit": "C",
+      "value": 40.97905232839497
+    },
+    {
+      "name": "TS2__p25",
+      "unit": "C",
+      "value": 40.812
+    },
+    {
+      "name": "TS2__median",
+      "unit": "C",
+      "value": 40.963
+    },
+    {
+      "name": "TS2__p75",
+      "unit": "C",
+      "value": 41.126
+    },
+    {
+      "name": "TS3__mean",
+      "unit": "C",
+      "value": 38.471016666666664
+    },
+    {
+      "name": "TS3__std",
+      "unit": "C",
+      "value": 0.08395047978156904
+    },
+    {
+      "name": "TS3__min",
+      "unit": "C",
+      "value": 38.316
+    },
+    {
+      "name": "TS3__max",
+      "unit": "C",
+      "value": 38.613
+    },
+    {
+      "name": "TS3__rms",
+      "unit": "C",
+      "value": 38.471108263864714
+    },
+    {
+      "name": "TS3__p25",
+      "unit": "C",
+      "value": 38.416
+    },
+    {
+      "name": "TS3__median",
+      "unit": "C",
+      "value": 38.496
+    },
+    {
+      "name": "TS3__p75",
+      "unit": "C",
+      "value": 38.52075000000001
+    },
+    {
+      "name": "TS4__mean",
+      "unit": "C",
+      "value": 31.745250000000002
+    },
+    {
+      "name": "TS4__std",
+      "unit": "C",
+      "value": 1.1071352917176234
+    },
+    {
+      "name": "TS4__min",
+      "unit": "C",
+      "value": 30.363
+    },
+    {
+      "name": "TS4__max",
+      "unit": "C",
+      "value": 33.594
+    },
+    {
+      "name": "TS4__rms",
+      "unit": "C",
+      "value": 31.764550148186686
+    },
+    {
+      "name": "TS4__p25",
+      "unit": "C",
+      "value": 30.665
+    },
+    {
+      "name": "TS4__median",
+      "unit": "C",
+      "value": 31.576
+    },
+    {
+      "name": "TS4__p75",
+      "unit": "C",
+      "value": 32.7785
+    },
+    {
+      "name": "VS1__mean",
+      "unit": "mm/s",
+      "value": 0.57695
+    },
+    {
+      "name": "VS1__std",
+      "unit": "mm/s",
+      "value": 0.02685170696001775
+    },
+    {
+      "name": "VS1__min",
+      "unit": "mm/s",
+      "value": 0.532
+    },
+    {
+      "name": "VS1__max",
+      "unit": "mm/s",
+      "value": 0.624
+    },
+    {
+      "name": "VS1__rms",
+      "unit": "mm/s",
+      "value": 0.5775745117875846
+    },
+    {
+      "name": "VS1__p25",
+      "unit": "mm/s",
+      "value": 0.553
+    },
+    {
+      "name": "VS1__median",
+      "unit": "mm/s",
+      "value": 0.577
+    },
+    {
+      "name": "VS1__p75",
+      "unit": "mm/s",
+      "value": 0.603
+    },
+    {
+      "name": "CE__mean",
+      "unit": "%",
+      "value": 39.60135
+    },
+    {
+      "name": "CE__std",
+      "unit": "%",
+      "value": 6.317224210640304
+    },
+    {
+      "name": "CE__min",
+      "unit": "%",
+      "value": 28.866
+    },
+    {
+      "name": "CE__max",
+      "unit": "%",
+      "value": 47.438
+    },
+    {
+      "name": "CE__rms",
+      "unit": "%",
+      "value": 40.10204787227206
+    },
+    {
+      "name": "CE__p25",
+      "unit": "%",
+      "value": 33.610749999999996
+    },
+    {
+      "name": "CE__median",
+      "unit": "%",
+      "value": 40.6755
+    },
+    {
+      "name": "CE__p75",
+      "unit": "%",
+      "value": 45.938250000000004
+    },
+    {
+      "name": "CP__mean",
+      "unit": "kW",
+      "value": 1.86275
+    },
+    {
+      "name": "CP__std",
+      "unit": "kW",
+      "value": 0.27704714550656057
+    },
+    {
+      "name": "CP__min",
+      "unit": "kW",
+      "value": 1.383
+    },
+    {
+      "name": "CP__max",
+      "unit": "kW",
+      "value": 2.188
+    },
+    {
+      "name": "CP__rms",
+      "unit": "kW",
+      "value": 1.8832399431122244
+    },
+    {
+      "name": "CP__p25",
+      "unit": "kW",
+      "value": 1.6025
+    },
+    {
+      "name": "CP__median",
+      "unit": "kW",
+      "value": 1.924
+    },
+    {
+      "name": "CP__p75",
+      "unit": "kW",
+      "value": 2.1295
+    },
+    {
+      "name": "SE__mean",
+      "unit": "%",
+      "value": 59.15718333333334
+    },
+    {
+      "name": "SE__std",
+      "unit": "%",
+      "value": 23.56511874819197
+    },
+    {
+      "name": "SE__min",
+      "unit": "%",
+      "value": 0.0
+    },
+    {
+      "name": "SE__max",
+      "unit": "%",
+      "value": 79.568
+    },
+    {
+      "name": "SE__rms",
+      "unit": "%",
+      "value": 63.67799589771964
+    },
+    {
+      "name": "SE__p25",
+      "unit": "%",
+      "value": 67.657
+    },
+    {
+      "name": "SE__median",
+      "unit": "%",
+      "value": 68.5145
+    },
+    {
+      "name": "SE__p75",
+      "unit": "%",
+      "value": 68.889
+    }
+  ],
+  "metadata": {
+    "archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "comparison_id": "hydraulic-compare-20261021-2104d",
+    "cycle_id": "1",
+    "cycle_split_membership": "train",
+    "dataset": "UCI Condition Monitoring of Hydraulic Systems",
+    "dataset_doi": "10.24432/C5CW21",
+    "dataset_url": "https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems",
+    "feature_recipe_version": "cycle-summary-v1",
+    "generalization_warning": "Validation and test are cooler condition 100%, unlike most training cycles; accumulator-pressure conditions also shift. The source is sequential and provides no independent run or rig identifiers, so independent-run generalization has not been established. This is retrospective classification of a completed cycle, not early warning.",
+    "ground_truth_note": "retrospective only; never a model input",
+    "model_name": "Random Forest",
+    "model_parameters": "{\"max_depth\": null, \"min_samples_leaf\": 5}",
+    "model_random_state": "42",
+    "model_validation": "Four expanding, forward temporal blocks inside the nominal training partition, each with a 60-cycle gap, followed by the fixed chronological validation partition. These blocks do not establish independent runs.",
+    "model_version": "hydraulic-comparison-v1:random_forest",
+    "positive_class_definition": "label 1 = pump leakage present (original pump grade 1 or 2)",
+    "prediction_warning": "Predictions are model outputs, not direct laboratory measurements, certified diagnoses, or maintenance instructions.",
+    "probability_disclosure": "Omitted: candidate probabilities are uncalibrated model scores.",
+    "project_name": "Smart Laboratory Report Generator",
+    "target": "pump leakage: 0=no leakage; 1=leakage present (original pump grade 1 or 2)",
+    "validation_decision_threshold": "0.13628977735799333",
+    "validation_method": "Four expanding, forward temporal blocks inside the nominal training partition, each with a 60-cycle gap, followed by the fixed chronological validation partition. These blocks do not establish independent runs."
+  },
+  "model_id": "hydraulic-comparison-v1:random_forest",
+  "sections": [
+    {
+      "content": "Retrospectively estimate whether the documented hydraulic cycle shows pump leakage from cycle-level physical sensor features.",
+      "name": "objective"
+    },
+    {
+      "content": "Smart Laboratory Report Generator; UCI hydraulic condition-monitoring experimental test rig; 17 documented sensor channels; 60-second cycles. Source: UCI Condition Monitoring of Hydraulic Systems (DOI 10.24432/C5CW21). Attribution requested: Helwig, Pignanelli, and Sch\u00fctze, \u201cCondition Monitoring of a Complex Hydraulic System Using Multivariate Statistics,\u201d IEEE I2MTC 2015, DOI: 10.1109/I2MTC.2015.7151267.",
+      "name": "materials"
+    },
+    {
+      "content": "Sensor rows were aligned positionally using the UCI documented row-as-cycle convention. Per-cycle mean, population standard deviation (ddof=0), minimum, maximum, RMS, 25th percentile, median, and 75th percentile were computed independently at each channel's native sampling rate. The fitted pipeline uses the 14 physical channels only; profile targets and virtual channels CE, CP, SE are excluded from prediction. Scaling was fitted on the training partition only; the classification threshold was selected on validation data. This is retrospective classification using full-cycle sensor summaries, not a pre-cycle forecast or early-warning result. Native rates: PS1-PS6/EPS1 100 Hz, FS1/FS2 10 Hz, TS1-TS4/VS1/CE/CP/SE 1 Hz.",
+      "name": "procedure"
+    },
+    {
+      "content": "Cycle identifier: 1 (1-based source row index; no timestamp).\nModel: Random Forest (hydraulic-comparison-v1:random_forest).\nValidation method: Four expanding, forward temporal blocks inside the nominal training partition, each with a 60-cycle gap, followed by the fixed chronological validation partition. These blocks do not establish independent runs.\nPositive class definition: label 1 = pump leakage present (original pump grade 1 or 2); label 0 = original grade 0.\nDerived sensor features (each retains its source channel unit):\n- PS1__mean: 160.67349 bar\n- PS1__std: 13.938147 bar\n- PS1__min: 145.83 bar\n- PS1__max: 191.51 bar\n- PS1__rms: 161.27691 bar\n- PS1__p25: 151.19 bar\n- PS1__median: 156.25 bar\n- PS1__p75: 166.31 bar\n- PS2__mean: 109.46691 bar\n- PS2__std: 47.110581 bar\n- PS2__min: 0 bar\n- PS2__max: 156.99 bar\n- PS2__rms: 119.17387 bar\n- PS2__p25: 120.19 bar\n- PS2__median: 129.365 bar\n- PS2__p75: 130.54 bar\n- PS3__mean: 1.9914753 bar\n- PS3__std: 0.94562602 bar\n- PS3__min: 0 bar\n- PS3__max: 10.039 bar\n- PS3__rms: 2.2045822 bar\n- PS3__p25: 2.219 bar\n- PS3__median: 2.297 bar\n- PS3__p75: 2.359 bar\n- PS4__mean: 0 bar\n- PS4__std: 0 bar\n- PS4__min: 0 bar\n- PS4__max: 0 bar\n- PS4__rms: 0 bar\n- PS4__p25: 0 bar\n- PS4__median: 0 bar\n- PS4__p75: 0 bar\n- PS5__mean: 9.8421695 bar\n- PS5__std: 0.088146608 bar\n- PS5__min: 9.681 bar\n- PS5__max: 10.016 bar\n- PS5__rms: 9.8425642 bar\n- PS5__p25: 9.762 bar\n- PS5__median: 9.844 bar\n- PS5__p75: 9.922 bar\n- PS6__mean: 9.7280975 bar\n- PS6__std: 0.085359057 bar\n- PS6__min: 9.568 bar\n- PS6__max: 9.887 bar\n- PS6__rms: 9.728472 bar\n- PS6__p25: 9.65 bar\n- PS6__median: 9.733 bar\n- PS6__p75: 9.806 bar\n- EPS1__mean: 2538.9292 W\n- EPS1__std: 185.60065 W\n- EPS1__min: 2339.8 W\n- EPS1__max: 2951.6 W\n- EPS1__rms: 2545.704 W\n- EPS1__p25: 2409.8 W\n- EPS1__median: 2479.8 W\n- EPS1__p75: 2618.8 W\n- FS1__mean: 6.709815 l/min\n- FS1__std: 3.012914 l/min\n- FS1__min: 0 l/min\n- FS1__max: 18.71 l/min\n- FS1__rms: 7.3552205 l/min\n- FS1__p25: 7.68775 l/min\n- FS1__median: 7.836 l/min\n- FS1__p75: 7.934 l/min\n- FS2__mean: 10.304592 l/min\n- FS2__std: 0.09169501 l/min\n- FS2__min: 10.148 l/min\n- FS2__max: 10.446 l/min\n- FS2__rms: 10.305 l/min\n- FS2__p25: 10.2105 l/min\n- FS2__median: 10.327 l/min\n- FS2__p75: 10.389 l/min\n- TS1__mean: 35.621983 C\n- TS1__std: 0.30565048 C\n- TS1__min: 35.156 C\n- TS1__max: 36.152 C\n- TS1__rms: 35.623295 C\n- TS1__p25: 35.401 C\n- TS1__median: 35.572 C\n- TS1__p75: 35.89975 C\n- TS2__mean: 40.978767 C\n- TS2__std: 0.1530105 C\n- TS2__min: 40.773 C\n- TS2__max: 41.25 C\n- TS2__rms: 40.979052 C\n- TS2__p25: 40.812 C\n- TS2__median: 40.963 C\n- TS2__p75: 41.126 C\n- TS3__mean: 38.471017 C\n- TS3__std: 0.08395048 C\n- TS3__min: 38.316 C\n- TS3__max: 38.613 C\n- TS3__rms: 38.471108 C\n- TS3__p25: 38.416 C\n- TS3__median: 38.496 C\n- TS3__p75: 38.52075 C\n- TS4__mean: 31.74525 C\n- TS4__std: 1.1071353 C\n- TS4__min: 30.363 C\n- TS4__max: 33.594 C\n- TS4__rms: 31.76455 C\n- TS4__p25: 30.665 C\n- TS4__median: 31.576 C\n- TS4__p75: 32.7785 C\n- VS1__mean: 0.57695 mm/s\n- VS1__std: 0.026851707 mm/s\n- VS1__min: 0.532 mm/s\n- VS1__max: 0.624 mm/s\n- VS1__rms: 0.57757451 mm/s\n- VS1__p25: 0.553 mm/s\n- VS1__median: 0.577 mm/s\n- VS1__p75: 0.603 mm/s\n- CE__mean: 39.60135 %\n- CE__std: 6.3172242 %\n- CE__min: 28.866 %\n- CE__max: 47.438 %\n- CE__rms: 40.102048 %\n- CE__p25: 33.61075 %\n- CE__median: 40.6755 %\n- CE__p75: 45.93825 %\n- CP__mean: 1.86275 kW\n- CP__std: 0.27704715 kW\n- CP__min: 1.383 kW\n- CP__max: 2.188 kW\n- CP__rms: 1.8832399 kW\n- CP__p25: 1.6025 kW\n- CP__median: 1.924 kW\n- CP__p75: 2.1295 kW\n- SE__mean: 59.157183 %\n- SE__std: 23.565119 %\n- SE__min: 0 %\n- SE__max: 79.568 %\n- SE__rms: 63.677996 %\n- SE__p25: 67.657 %\n- SE__median: 68.5145 %\n- SE__p75: 68.889 %\nPredicted class: 0 (no pump leakage).\nDecision threshold for positive class 1, selected on validation data: 0.13629.\ntraining (in-sample) cycles 1-1483: support 0/1 827/656; confusion matrix [[821, 6], [0, 656]]; accuracy 0.9960, precision 0.9909, recall 1.0000, F1 0.9954, balanced accuracy 0.9964, ROC-AUC 1.0000.\nvalidation (selection) cycles 1604-1814: support 0/1 122/89; confusion matrix [[122, 0], [0, 89]]; accuracy 1.0000, precision 1.0000, recall 1.0000, F1 1.0000, balanced accuracy 1.0000, ROC-AUC 1.0000.\nlocked chronological test cycles 1935-2205: support 0/1 107/164; confusion matrix [[107, 0], [0, 164]]; accuracy 1.0000, precision 1.0000, recall 1.0000, F1 1.0000, balanced accuracy 1.0000, ROC-AUC 1.0000.",
+      "name": "results"
+    },
+    {
+      "content": "Predictions are model outputs, not direct laboratory measurements, certified diagnoses, or maintenance instructions. Data come from one experimental rig; source files have no timestamp/run identifier, and the time purge does not establish independent cycles. Sensor feature summaries are derived values, not raw measurements.",
+      "name": "conclusion"
+    }
+  ],
+  "status": "generated",
+  "title": "Hydraulic condition report \u2014 cycle 1"
+}

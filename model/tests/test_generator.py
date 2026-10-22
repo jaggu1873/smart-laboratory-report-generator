@@ -21,6 +21,7 @@ class GeneratorTests(unittest.TestCase):
                 {"name": "temperature", "value": 99.8, "unit": "C"},
                 {"name": "volume", "value": 250, "unit": "mL"},
             ],
+            "metadata": {"source": "unit-test"},
         }
         self.generator = LabReportGenerator(config=ModelConfig(backend="mock"))
 
@@ -52,6 +53,10 @@ class GeneratorTests(unittest.TestCase):
     def test_measurements_carried_through(self) -> None:
         report = self.generator.generate(self.raw)
         self.assertEqual(len(report.measurements), 2)
+
+    def test_metadata_carried_through(self) -> None:
+        report = self.generator.generate(self.raw)
+        self.assertEqual(report.metadata, {"source": "unit-test"})
 
     def test_deterministic_output(self) -> None:
         r1 = self.generator.generate(self.raw)

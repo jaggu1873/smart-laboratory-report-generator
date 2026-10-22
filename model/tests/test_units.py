@@ -41,6 +41,9 @@ class UnitsRegistryTests(unittest.TestCase):
     def test_is_recognized_unit(self) -> None:
         self.assertTrue(is_recognized_unit("g"))
         self.assertTrue(is_recognized_unit(""))
+        for unit in ("bar", "W", "kW", "l/min", "mm/s", "C", "%"):
+            with self.subTest(unit=unit):
+                self.assertTrue(is_recognized_unit(unit))
         self.assertFalse(is_recognized_unit("furlongs"))
 
 
