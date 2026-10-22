@@ -1,13 +1,11 @@
-"""Evaluate the selected baseline model and track final test metrics."""
+"""Evaluate the selected legacy Wine baseline and write test artifacts."""
 
 import json
 from pathlib import Path
 
 import joblib
 import matplotlib
-import mlflow
 import pandas as pd
-import yaml
 from matplotlib import pyplot as plt
 from sklearn.metrics import (
     ConfusionMatrixDisplay,
@@ -22,9 +20,8 @@ matplotlib.use("Agg")
 
 
 def main() -> None:
-    """Write final test metrics and log them to a final-evaluation run."""
+    """Write Wine test metrics and figures without MLflow tracking."""
     project_root = Path(__file__).resolve().parents[1]
-    params = yaml.safe_load((project_root / "params.yaml").read_text(encoding="utf-8"))
     model = joblib.load(project_root / "models" / "best_model.joblib")
     train_data = pd.read_csv(project_root / "data" / "processed" / "train.csv")
     feature_names = train_data.drop(columns="good").columns
@@ -90,13 +87,6 @@ def main() -> None:
         figure.tight_layout()
         figure.savefig(feature_importance_figure_path, dpi=150, bbox_inches="tight")
         plt.close(figure)
-
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
-    mlflow.set_experiment(params["mlflow"]["experiment_name"])
-    with mlflow.start_run(run_name="final-evaluation"):
-        mlflow.set_tag("stage", "final_evaluation")
-        mlflow.log_metrics(metrics)
-        mlflow.log_artifact(str(confusion_path), artifact_path="evaluation")
 
     print(json.dumps(metrics, indent=2))
     print(f"Saved metrics to {metrics_path}")

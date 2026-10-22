@@ -103,9 +103,34 @@ Thumbs.db
 desktop.ini
 
 .venv/
+venv/
+env/
 mlflow.db
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
 mlruns/
+mlartifacts/
 __pycache__/
 .ipynb_checkpoints/
 
 mlflow.db.bak
+*.db.bak
+*.sqlite.bak
+*.log
+*.tmp
+*.temp
+
+# Local datasets and generated hydraulic training intermediates
+data/inspection/
+data/processed/hydraulic/
+models/hydraulic/runs/
+metrics/hydraulic/runs/
+metrics/hydraulic/audits/
+reports/hydraulic/runs/
+
+# Local DVC cache and filesystem storage
+.dvc/cache/
+dvc-storage/

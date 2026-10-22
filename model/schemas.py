@@ -102,6 +102,7 @@ class LabReport:
         sections: Ordered list of report sections.
         measurements: Measurements carried through from the input, used by
             the validator for data-level checks.
+        metadata: Provenance and context carried through from the input.
         status: Current lifecycle status of the report.
         model_id: Identifier of the model/backend that produced the report.
     """
@@ -111,6 +112,7 @@ class LabReport:
     measurements: list[Measurement] = field(default_factory=list)
     status: ReportStatus = ReportStatus.DRAFT
     model_id: str = ""
+    metadata: dict[str, str] = field(default_factory=dict)
 
     def get_section(self, name: SectionName) -> Optional[ReportSection]:
         """Return the first section matching ``name``, or ``None``."""

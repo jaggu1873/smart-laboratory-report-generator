@@ -71,6 +71,7 @@ class LabReportGenerator:
             title=experiment.title,
             sections=report_sections,
             measurements=list(experiment.measurements),
+            metadata=dict(experiment.metadata),
             status=ReportStatus.GENERATED,
             model_id=self.backend.model_id,
         )

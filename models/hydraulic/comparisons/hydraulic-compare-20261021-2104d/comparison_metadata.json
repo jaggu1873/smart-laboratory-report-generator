@@ -1,0 +1,38 @@
+{
+  "archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+  "comparison_id": "hydraulic-compare-20261021-2104d",
+  "dataset_doi": "10.24432/C5CW21",
+  "model_versions": {
+    "hist_gradient_boosting": {
+      "family": "hist_gradient_boosting",
+      "parameters": {
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 15
+      },
+      "random_state": 42
+    },
+    "logistic_regression": {
+      "family": "logistic_regression",
+      "parameters": {
+        "C": 0.01
+      },
+      "random_state": 42
+    },
+    "majority_dummy": {
+      "family": "majority_dummy",
+      "parameters": {},
+      "random_state": 42
+    },
+    "random_forest": {
+      "family": "random_forest",
+      "parameters": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "random_state": 42
+    }
+  },
+  "selected_candidate": "random_forest",
+  "validation_method": "Four expanding, forward temporal blocks inside the nominal training partition, each with a 60-cycle gap, followed by the fixed chronological validation partition. These blocks do not establish independent runs."
+}
